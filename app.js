@@ -4,27 +4,27 @@ let mistake = 0;
 const mistakeDisplay = document.querySelector(".mistakes");
 
 const starter = [
-  "2---46---",
-  "1-78-9---",
-  "--4-6----",
-  "2---6-8-1",
-  "--3-5-7-9",
-  "-56----23",
-  "6-------5",
-  "78----4-6",
-  "8---3-5-7",
+  "8-5---9--",
+  "-9-8----1",
+  "--7--3---",
+  "---1-4---",
+  "12----4--",
+  "7-82-----",
+  "6-5--1---",
+  "----45---",
+  "3-4-6-1-5",
 ];
 
 const answer = [
-  "234567891",
-  "123456789",
-  "456789123",
-  "678912345",
-  "789123456",
-  "891234567",
-  "234567891",
-  "123456789",
-  "456789123",
+  "835416927",
+  "296857431",
+  "417293658",
+  "569134782",
+  "123678495",
+  "748259316",
+  "625781394",
+  "981345276",
+  "374962185",
 ];
 
 function setupGame() {
@@ -64,7 +64,6 @@ function select() {
   }
   selectedNumber = this;
   this.classList.toggle("selected-number");
-  console.log(selectedNumber);
 }
 
 function addAnswer() {
@@ -73,7 +72,6 @@ function addAnswer() {
       this.innerText = selectedNumber.innerText;
     } else {
       mistake += 1;
-      console.log(mistake);
       mistakeDisplay.innerText = mistake.toString();
     }
   }

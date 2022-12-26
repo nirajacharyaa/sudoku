@@ -50,6 +50,10 @@
   margin: 0;
 }
 
+.mistakeHappened {
+  background: #e06d6d !important;
+}
+
 .vertical {
   border-right: 2px solid black;
 }
